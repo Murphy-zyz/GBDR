@@ -244,7 +244,7 @@ vector<pair<int, int> > path(int x, int y, int s, int t){
 		}
 		else{
 			if(pl < pr){
-				int v = min(abs((y - F + M) % M - t),M - abs((y - F + M) % M - t));
+				int v = min(abs((y - F + M) % M - t), M - abs((y - F + M) % M - t));
 				if(v == 0)
 					dir[0] = {lx, ly}, dir[1] = {ux, uy}, dir[2] = {dx, dy}, dir[3] = {rx, ry};
 				else{
